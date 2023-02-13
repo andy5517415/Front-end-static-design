@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購物網_服裝顏色搭配</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!--TP鍵-->
+    <a class="btn mx-3" href="#" role="button"  style="background:#e1ac3c;color:white;padding: 9px 26px;border-radius: 20px; position: fixed;top:90%;right:5%;">TOP</a>
+    <!--TP鍵-->
+    <!-- 頁面加載器 -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header最上面那邊而且要fixed -->
+    <header class="header-section">
+        <div class="header-top fixed-top" style="background: white;">
+            <!--brand-->
+            <a class="navabar-brand mx-4" href="">
+                <img src="img/Nav-logo.png" style="width: 150px;height: 50px;">
+            </a>
+            <!--brand End-->
+                <div class="ht-left">
+                    <div class="mail-service">
+                        <i class=" fa fa-envelope"></i>
+                        andy5517415@gmail.com
+                    </div>
+                    <div class="phone-service">
+                        <i class=" fa fa-phone"></i>
+                        +886912345678
+                    </div>
+                </div>
+                <div class="ht-right col-md-7">
+                    <a href="" class="login-panel"><i class="fa fa-user"></i>登入</a>
+                    <div class="lan-selector">
+                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                            <option value='yt' data-image="img/flag-1.png" data-imagecss="flag yt"
+                                data-title="English">繁體中文</option>
+                            <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
+                                data-title="English">英文</option>
+                        </select>
+                    </div>
+                    <div class="top-social" >
+                        🌼歡迎追蹤社群粉絲團🌼
+                        <a href="https://www.facebook.com/andy5517416"><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-twitter-alt"></i></a>
+                        <a href="https://instagram.com/avamax_7?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        <!--這邊主要顯示商標圖、搜尋欄、喜好與購物車項目-->
+        <br><br><br>
+        <div class="container">
+            <!--商標圖-->
+            <div class="inner-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="img/Nav-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+            <!--搜尋欄(好看用)-->
+                    <div class="col-lg-7 col-md-7">
+                        <div class="advanced-search">
+                            <button type="button" class="category-btn">🍑全部類別</button>
+                            <div class="input-group">
+                                <input type="text" placeholder="搜尋您要的衣服/鞋子/飾品">
+                                <button type="button"><i class="ti-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right col-md-3">
+                        <ul class="nav-right">
+                            <li class="heart-icon">
+                                <a href="">
+                                    <i class="icon_heart_alt"></i>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="cart-icon">
+                                <a href="">
+                                    <i class="icon_bag_alt"></i>
+                                    <span>3</span>
+                                </a>
+                                <div class="cart-hover">
+                                    <div class="select-items">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>$600 x 1</p>
+                                                            <h6>橄欖綠口袋夾克外套</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>$100 x 1</p>
+                                                            <h6>純黃色皺褶毛衣</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="select-total">
+                                        <span>總共:</span>
+                                        <h5>$700</h5>
+                                    </div>
+                                    <div class="select-button">
+                                        <a href="./shopping-cart.html" class="primary-btn view-card">瀏覽購物車</a>
+                                        <a href="./check-out.html" class="primary-btn checkout-btn">立即結帳</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-price">$700</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="container">
+                <div class="nav-depart">
+                    <div class="depart-btn">
+                        <i class="ti-menu"></i>
+                        <span>🍑全部類別</span>
+                        <ul class="depart-hover">
+                            <li class="active"><a href="shop_women.html">WOMEN</a></li>
+                            <li><a href="shop_men.html">MEN</a></li>
+                            <li><a href="shop_kids.html">KIDS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="nav-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">🏠Home</a></li>
+                        <li><a href="./shop.html">🛍️Shop</a></li>
+                        <li><a href="./blog.html">👚穿搭/✈️旅遊/🥘美食達人</a></li>
+                        <li><a href="./contact.html">🗺️實體店面位置</a></li>
+                        <li><a>Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="./shopping-cart.html">🛒查看購物車</a></li>
+                                <li><a href="./check-out.html">直接購買</a></li>
+                                <li><a href="./faq.html">Q&A</a></li>
+                                <li><a href="./register.html">立即註冊</a></li>
+                                <li><a href="./login.html">會員登入</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+        <!-- 目錄路徑 Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <span>穿搭/旅遊/美食達人</span>
+                        <span>&nbsp>&nbsp&nbsp穿搭</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 目錄路徑 Section Begin -->
+<!--左側欄位 Being-->
+    <section class="blog-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+                    <div class="blog-sidebar">
+                        <div class="search-form">
+                            <h4>搜尋</h4>
+                            <form action="#">
+                                <input type="text" placeholder="搜尋文章...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="blog-catagory">
+                            <a href="./blog.html"><h4>回主頁</h4></a>
+                            <ul>
+                                <li><a href="./blog-cloth.html">穿搭(3)</a></li>
+                                <li><a href="">美妝(0)</a></li>
+                                <li><a href="./blog-travel.html">旅遊(1)</a></li>
+                                <li><a href="">模特兒(0)</a></li>
+                            </ul>
+                        </div>
+                        <div class="recent-post">
+                            <h4>最近貼文</h4>
+                            <div class="recent-blog">
+                                <a href="blog-旅遊_堅果小巷.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://pic.pimg.tw/cindy6732/1535368568-574468147.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>堅果小巷
+                                        </h6>
+                                        <p>旅遊 <span>－2021/06/11</span></p>
+                                    </div>
+                                </a>
+
+
+                                <a href="blog-穿搭_打造好看穿搭.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="img/穿搭1.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>打造好看穿搭</h6>
+                                        <p>穿搭 <span>－2021/05/04</span></p>
+                                    </div>
+                                </a>
+                                <a href="blog-穿搭_穿搭技巧一次看完.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://truestyle.tw/wp-content/uploads/2021/02/20201025_210217-edited-1.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>穿搭技巧一次看完</h6>
+                                        <p>穿搭 <span>－2021/05/04</span></p>
+                                    </div>
+                                </a>
+                                <a href="blog-穿搭_服裝顏色搭配.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-01.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>服裝顏色搭配</h6>
+                                        <p>穿搭 <span>－2019/06/04</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog-tags">
+                            <h4></h4>
+                            <div class="tag-item">
+                                <a href="#">台中</a>
+                                <a href="#">打卡聖地</a>
+                                <a href="#">基礎穿搭</a>
+                                <a href="#">早午餐</a>
+                                <a href="#">美食</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--左側欄位 End-->
+            <!--中間blog Being-->
+                <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="blog-details spad">
+                        <div class="row">
+                        <div class="col-lg-12">
+                    <div class="blog-details-inner">
+                        <div class="blog-detail-title">
+                            <h2>服裝顏色搭配</h2>
+                            <p>穿搭 <span>－2019/06/04</span></p>
+                        </div>
+                        <div class="blog-large-pic">
+                            <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-01.jpg" alt="">
+                        </div>
+                        <div class="blog-detail-desc">
+                            <p>基礎色彩穿搭技巧教學
+                            關於穿搭，說穿了就是「保持平衡」與「製造層次感」
+                            </p><br>
+                        </div>
+                        <div class="blog-quote" style="height: 50px">
+                            <p>在服裝中有兩大重點，一個是版型，另一個就是色彩，你是否有出門思索某種顏色單品怎麼配色怎麼穿才能特別好看，這篇文章將從基礎配色中開始為你介紹，請跟著我們一同探索 服裝顏色搭配 世界的奧秘。</p>
+                        </div><br><br>
+
+                        <h2 style="color: skyblue;" class="my-3">色彩三要素：色相、明度、彩度</h2>
+                        <p>色彩的組成有三個非常重要要點；分別是色相、明度和彩度，這個個性質就是通稱「色彩三要素」，當然也有人稱作為色彩三屬性。
+
+                        而將這屬性製作成表就成為大家最常看到的<B>色相環</B>，依照色相環就能對顏色做相對應的描繪，也能簡單選擇出所需要的色彩。</p><br>
+
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-02-800x800.jpg" >
+                                     
+                        </div><br>
+                        
+                        <h3 style="color:#FF8040" class="my-3">色相</h3>
+                        <p>就是指色彩的外相，依照光波照射物品不同波長呈現出的色彩，並以相貌給予色彩名子。
+
+                        也更方便讓在溝通色彩時，即使沒看到色彩，也能依據視覺經驗記憶而浮現出色彩。例如：紅色、橙色、黃色…等等。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-03-800x800.jpg" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">明度</h3>
+                        <p>簡單來說就是，色彩照光後，呈現在視覺上有的明亮感，色彩能夠反射的光較多感覺較量，相對較少則感覺較暗，這樣的明亮度統稱為色彩的「明度」。<br>
+
+                        不同色彩，有著不同明暗；如黃色比純藍色來得明亮；黃色、橙色是屬於明度高的色彩，而綠色及藍色就是明度低的，也有人用藍色來代表低落心情。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-04-800x800.jpg" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">彩度</h3>
+                        <p>這指的是色彩純度，通常以色彩純色程度比例，來辨識彩度的高低。在所有顏色之中『黑白灰』代表著無色彩，所沒有彩度標誌，所以純色混合黑白灰，彩度就大大降低。
+
+                        例如：藍色混和白色時，純度及鮮豔程度就降低、前面所提到的明度也大大下降，成為淡藍色。所以一個顏色純度高也代表彩度高，而色彩純度少則彩度低。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-05-800x800.jpg" >
+                        </div><br>
+
+                       <h2 style="color: skyblue;" class="my-3">相近色 ：</h2>必須了解衣物配色法 ：</h2>
+                        <p>好了好了！看了那麼多關於色彩硬知識後，總該讓我們回到服裝配色上。
+
+                        實際運用非常簡單掌握以下幾點配合上方色彩三要素 的調節，就能輕鬆解決穿搭配色問題，廢話不多說馬上看下去。</p><br>
+
+                        <h3 style="color:#FF8040" class="my-3">相近色 ：</h3>
+                        <p>相近色也非常容易推斷，使用剛剛的色相環，選擇一個顏色，而鄰近的顏色就是你可互相做配比的色彩。<br>
+
+                        而相近色還有另一種方式可以推斷，就是甚麼顏色與甚麼顏色混和會產生另一種顏色，這個顏色也就是相近色的一種，比如：藍色與黃色混和生出綠色，那這三個顏色就能搭配得很好。<br>
+
+                        這樣顏色的血緣關係就是相似色的基礎，當然在配色上千萬不要超過三個顏色，否則容易變得很雜亂。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/1200px-Farbkreis_Itten_1961.svg-800x800.png" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">對比色 ：</h3>
+                        <p>對比色非常好推測，就是色相環中對面剛好180度的顏色。<br>
+
+                        在穿對比色色如果選擇彩度高的會更顯得搶眼，如果想要低調的玩色彩，建議可以使用明度高彩度低，或深度較高當作下身或外搭配明度低對比色在內，這樣會更顯得細緻值得別人玩味。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/1200px-Farbkreis_Itten_1961.svg-800x800.png" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">互補加強鮮明感：</h3>
+                        <p>其中對比色能夠讓兩種顏色更加鮮明，如果相似色疊在一起反倒沒有那麼有凸顯感，但如果對比色卻能讓兩邊色澤增加亮度，從下圖看到，同樣都是紅色方塊，在相似色中就顯得暗淡許多，而在對比色上就顯得鮮明，這用在穿搭上更能凸顯你要主推的服裝單品。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-07-800x501.jpg" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">顏色不超過三種：</h3>
+                        <p>有鎖定 plain-me 的朋友，一定有聽過這個名詞，除非你是超級配色高手，全身搭配的色系不超過三種，除了太雜亂花俏外，也會混淆你穿搭比例。當然除了黑白灰這類沒有彩度的顏色外。</p><br>
+
+                        <h3 style="color:#FF8040" class="my-3">想不到配甚麼，先配白色：</h3>
+                        <p>當你買了一件很搶眼的顏色，如果還沒有太多單品輔助，先從白色配比吧，這樣最安全沒錯，也是最好發揮那件單品的配法。</p><br>
+
+                        <h3 style="color:#FF8040" class="my-3">全身一個亮點：</h3>
+                        <p>通常我們穿搭會由一樣重點去延伸，配色也是，今天鎖定一個顏色，將其他色彩去輔助它，就算是配件也能大大加分唷！</p><br>
+
+                        <h2 style="color: skyblue;" class="my-3">藍色搭配實際操作示範：</h2>
+                        <p>夏天穿搭層出不來嗎？那就大玩色彩吧！顏色搭的好，夏季穿搭沒煩惱！這次來為各位示範衣櫃最多的 – 藍色搭配。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-10.jpg" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">藍色 同色系：</h3>
+                        <p>同樣色系下用不同深淺來做搭配，看似非常簡易的方式，但也是需要靠不同種類的同色單品構成。<br>
+
+                        範例：可以同樣單寧布料卻用水洗和原色搭配，或是藍色條紋配純藍色，都會讓你的同色系搭配更完美。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-11-01.jpg" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">藍色 相近色：</h3>
+                        <p>依照著色相環，選擇一個顏色，而鄰近的顏色就是你可互相做配比的色彩。<br>
+
+                        範例：藍色可以搭配綠色 &紫色，當然深淺明度也造就你的相近色系會不會過於突兀，通常為了讓腿看起來比較細，都會明度低的放下身，而明度高的放上身，當然也能隨意配比，搭配沒有規則的。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-12-01.jpg" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">藍色 對比色：</h3>
+                        <p>非常之簡單，對比色就是色相環中對面剛好180度的顏色。<br>
+
+                        範例：藍色可以搭配橘色，當然橘色的相近顏色也能與藍配合，比如卡其、橘黃、土色…等等。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-13-01.jpg" >
+                        </div><br>
+
+                        <h3 style="color:#FF8040" class="my-3">《卡其色系搭配提案》</h3>
+                        <p>炎炎夏日，用顏色來讓視覺降溫是個很簡便的方式，這邊提供了個人認為所有顏色中搭配性最高的顏色：卡其色系，幾套非常清爽的搭配範例給大家參考。</p><br>
+                        <div class="col-md-12 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/115822425_10159627942506756_7109303800693909932_o-800x800.jpg" >
+                        </div><br>
+                        <div class="tag-share">
+                            <div class="details-tag">
+                                <ul>
+                                    <li><i class="fa fa-tags"></i></li>
+                                    <li>穿搭</li>
+                                    <li>修飾身材</li>
+                                    <li>穿著比例</li>
+                                </ul>
+                            </div>
+                            <div class="blog-share">
+                                <span>Share:</span>
+                                <div class="social-links">
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-instagram"></i></a>
+                                    <a href=""><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-post">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <a href="./blog-旅遊_堅果小巷.html" class="prev-blog">
+                                        <div class="pb-pic">
+                                            <i class="ti-arrow-left"></i>
+                                            <img src="https://pic.pimg.tw/cindy6732/1535368568-574468147.jpg" alt="">
+                                        </div>
+                                        <div class="pb-text">
+                                            <span>上一篇文章</span>
+                                            <h5>堅果小巷</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 offset-lg-2 col-md-6">
+                                    <a href="./blog-穿搭_穿搭技巧一次看完.html" class="next-blog">
+                                        <div class="nb-pic">
+                                            <img src="img/穿搭1.jpg" alt="">
+                                            <i class="ti-arrow-right"></i>
+                                        </div>
+                                        <div class="nb-text">
+                                            <span>下一篇文章</span>
+                                            <h5>打造好看穿搭<h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--中間blog End-->
+
+        <!-- Icon Being -->
+        <section class="latest-blog spad">
+            <div class="container">
+            <div class="benefit-items">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-1.png" alt="免運">
+                            </div>
+                            <div class="sb-text">
+                                <h6>免運費</h6>
+                                <p>全館滿99$皆免運</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-2.png" alt="急速出貨">
+                            </div>
+                            <div class="sb-text">
+                                <h6>急速出貨</h6>
+                                <p>不耽擱您的一分一毫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-1.png" alt="安全支付">
+                            </div>
+                            <div class="sb-text">
+                                <h6>安全支付</h6>
+                                <p>100% 安全支付</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Icon End -->
+
+    <!-- Logo Section Begin -->
+    <div class="partner-logo">
+        <div class="container">
+            <div class="logo-carousel owl-carousel">
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-1.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-2.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-3.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-4.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Logo Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <a href="./index.html"><img src="img/Footer-logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>地址：台中科技大學｜<br>台中市北區三民路三段129號</li>
+                            <li>電話：+886912345678</li>
+                            <li>Email: andy5517415@gmail.com</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/andy5517416"><i class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/avamax_7?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>相關資訊</h5>
+                        <ul>
+                            <li><a href="./contact.html">關於我們</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h5>個人帳戶</h5>
+                        <ul>
+                            <li><a href="./login.html">我的個人資訊</a></li>
+                            <li><a href="./shopping-cart.html">購物車</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h5>😍訂閱我們的電子報😍</h5>
+                        <p>請輸入電子郵件以獲得我們最新的優惠活動!</p>
+                        <form action="" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your Mail">
+                            <button type="button">🐣訂閱</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+&copy;<script>document.write(new Date().getFullYear());</script> | 資應3A | 1310934017 | 李文勝</i>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                        <div class="payment-pic">
+                            <img src="img/payment-method.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

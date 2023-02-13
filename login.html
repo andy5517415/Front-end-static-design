@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購物網_登入</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script>
+        //Alert的JS1
+    function Alert_Order(){
+        alert("您好，已登入成功!")
+    }
+    </script>
+</head>
+
+<body>
+    <!--TP鍵-->
+    <a class="btn mx-3" href="#" role="button"  style="background:#e1ac3c;color:white;padding: 9px 26px;border-radius: 20px; position: fixed;top:90%;right:5%;">TOP</a>
+    <!--TP鍵-->
+    <!-- 頁面加載器 -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header最上面那邊而且要fixed -->
+    <header class="header-section">
+        <div class="header-top fixed-top" style="background: white;">
+            <!--brand-->
+            <a class="navabar-brand mx-4" href="#">
+                <img src="img/Nav-logo.png" style="width: 150px;height: 50px;">
+            </a>
+            <!--brand End-->
+                <div class="ht-left">
+                    <div class="mail-service">
+                        <i class=" fa fa-envelope"></i>
+                        andy5517415@gmail.com
+                    </div>
+                    <div class="phone-service">
+                        <i class=" fa fa-phone"></i>
+                        +886912345678
+                    </div>
+                </div>
+                <div class="ht-right col-md-7">
+                    <a href="#" class="login-panel"><i class="fa fa-user"></i>登入</a>
+                    <div class="lan-selector">
+                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                            <option value='yt' data-image="img/flag-1.png" data-imagecss="flag yt"
+                                data-title="English">繁體中文</option>
+                            <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
+                                data-title="English">英文</option>
+                        </select>
+                    </div>
+                    <div class="top-social" >
+                        🌼歡迎追蹤社群粉絲團🌼
+                        <a href="https://www.facebook.com/andy5517416"><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-twitter-alt"></i></a>
+                        <a href="https://instagram.com/avamax_7?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        <!--這邊主要顯示商標圖、搜尋欄、喜好與購物車項目-->
+        <br><br><br>
+        <div class="container">
+            <!--商標圖-->
+            <div class="inner-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="img/Nav-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+            <!--搜尋欄(好看用)-->
+                    <div class="col-lg-7 col-md-7">
+                        <div class="advanced-search">
+                            <button type="button" class="category-btn">🍑全部類別</button>
+                            <div class="input-group">
+                                <input type="text" placeholder="搜尋您要的衣服/鞋子/飾品">
+                                <button type="button"><i class="ti-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right col-md-3">
+                        <ul class="nav-right">
+                            <li class="heart-icon">
+                                <a href="#">
+                                    <i class="icon_heart_alt"></i>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="cart-icon">
+                                <a href="#">
+                                    <i class="icon_bag_alt"></i>
+                                    <span>3</span>
+                                </a>
+                                <div class="cart-hover">
+                                    <div class="select-items">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>$600 x 1</p>
+                                                            <h6>橄欖綠口袋夾克外套</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>$100 x 1</p>
+                                                            <h6>純黃色皺褶毛衣</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="select-total">
+                                        <span>總共:</span>
+                                        <h5>$700</h5>
+                                    </div>
+                                    <div class="select-button">
+                                        <a href="./shopping-cart.html" class="primary-btn view-card">瀏覽購物車</a>
+                                        <a href="./check-out.html" class="primary-btn checkout-btn">立即結帳</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-price">$700</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="container">
+                <div class="nav-depart">
+                    <div class="depart-btn">
+                        <i class="ti-menu"></i>
+                        <span>🍑全部類別</span>
+                        <ul class="depart-hover">
+                            <li class="active"><a href="shop_women.html">WOMEN</a></li>
+                            <li><a href="shop_men.html">MEN</a></li>
+                            <li><a href="shop_kids.html">KIDS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="nav-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">🏠Home</a></li>
+                        <li><a href="./shop.html">🛍️Shop</a></li>
+                        <li><a href="./blog.html">👚穿搭/✈️旅遊/🥘美食達人</a></li>
+                        <li><a href="./contact.html">🗺️實體店面位置</a></li>
+                        <li><a>Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="./shopping-cart.html">🛒查看購物車</a></li>
+                                <li><a href="./check-out.html">直接購買</a></li>
+                                <li><a href="./faq.html">Q&A</a></li>
+                                <li><a href="./register.html">立即註冊</a></li>
+                                <li><a href="./login.html">會員登入</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- 目錄路徑 Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="./index.html"><i class="fa fa-home"></i> 首頁</a>
+                        <span>會員登入</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 目錄路徑 Form Section Begin -->
+
+    <!-- Register Section Begin -->
+    <div class="register-login-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="login-form">
+                        <h2>會員登入</h2>
+                        <form action="#">
+                            <div class="group-input">
+                                <label for="username">請輸入您的電子郵件</label>
+                                <input type="text" id="username">
+                            </div>
+                            <div class="group-input">
+                                <label for="pass">請輸入密碼</label>
+                                <input type="text" id="pass">
+                            </div>
+                            <div class="group-input gi-check">
+                                <div class="gi-more">
+                                    <label for="save-pass">
+                                        記住密碼
+                                        <input type="checkbox" id="save-pass">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <a href="#" class="forget-pass">忘記密碼</a>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary" href="./index.html" role="button" onclick="Alert_Order()" style="width:100%;height:40px;background: #e1ac3c;border: 0px solid;"><B>點此登入</a>
+                        </form>
+                        <div class="switch-login">
+                            <a href="./register.html" class="or-login">尚未註冊?點此立即註冊</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Form Section End -->
+
+        <!-- Icon Being -->
+        <section class="latest-blog spad">
+            <div class="container">
+            <div class="benefit-items">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-1.png" alt="免運">
+                            </div>
+                            <div class="sb-text">
+                                <h6>免運費</h6>
+                                <p>全館滿99$皆免運</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-2.png" alt="急速出貨">
+                            </div>
+                            <div class="sb-text">
+                                <h6>急速出貨</h6>
+                                <p>不耽擱您的一分一毫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-1.png" alt="安全支付">
+                            </div>
+                            <div class="sb-text">
+                                <h6>安全支付</h6>
+                                <p>100% 安全支付</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Icon End -->
+
+    <!-- Logo Section Begin -->
+    <div class="partner-logo">
+        <div class="container">
+            <div class="logo-carousel owl-carousel">
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-1.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-2.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-3.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-4.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Logo Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <a href="./index.html"><img src="img/Footer-logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>地址：台中科技大學｜<br>台中市北區三民路三段129號</li>
+                            <li>電話：+886912345678</li>
+                            <li>Email: andy5517415@gmail.com</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/andy5517416"><i class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/avamax_7?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>相關資訊</h5>
+                        <ul>
+                            <li><a href="./contact.html">關於我們</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h5>個人帳戶</h5>
+                        <ul>
+                            <li><a href="./login.html">我的個人資訊</a></li>
+                            <li><a href="./shopping-cart.html">購物車</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h5>😍訂閱我們的電子報😍</h5>
+                        <p>請輸入電子郵件以獲得我們最新的優惠活動!</p>
+                        <form action="" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your Mail">
+                            <button type="button">🐣訂閱</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+&copy;<script>document.write(new Date().getFullYear());</script> | 資應3A | 1310934017 | 李文勝</i>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                        <div class="payment-pic">
+                            <img src="img/payment-method.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

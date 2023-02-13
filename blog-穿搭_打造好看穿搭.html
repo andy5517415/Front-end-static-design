@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購物網_打造好看穿搭</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!--TP鍵-->
+    <a class="btn mx-3" href="#" role="button"  style="background:#e1ac3c;color:white;padding: 9px 26px;border-radius: 20px; position: fixed;top:90%;right:5%;">TOP</a>
+    <!--TP鍵-->
+    <!-- 頁面加載器 -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header最上面那邊而且要fixed -->
+    <header class="header-section">
+        <div class="header-top fixed-top" style="background: white;">
+            <!--brand-->
+            <a class="navabar-brand mx-4" href="">
+                <img src="img/Nav-logo.png" style="width: 150px;height: 50px;">
+            </a>
+            <!--brand End-->
+                <div class="ht-left">
+                    <div class="mail-service">
+                        <i class=" fa fa-envelope"></i>
+                        andy5517415@gmail.com
+                    </div>
+                    <div class="phone-service">
+                        <i class=" fa fa-phone"></i>
+                        +886912345678
+                    </div>
+                </div>
+                <div class="ht-right col-md-7">
+                    <a href="" class="login-panel"><i class="fa fa-user"></i>登入</a>
+                    <div class="lan-selector">
+                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                            <option value='yt' data-image="img/flag-1.png" data-imagecss="flag yt"
+                                data-title="English">繁體中文</option>
+                            <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
+                                data-title="English">英文</option>
+                        </select>
+                    </div>
+                    <div class="top-social" >
+                        🌼歡迎追蹤社群粉絲團🌼
+                        <a href="https://www.facebook.com/andy5517416"><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-twitter-alt"></i></a>
+                        <a href="https://instagram.com/avamax_7?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        <!--這邊主要顯示商標圖、搜尋欄、喜好與購物車項目-->
+        <br><br><br>
+        <div class="container">
+            <!--商標圖-->
+            <div class="inner-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="img/Nav-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+            <!--搜尋欄(好看用)-->
+                    <div class="col-lg-7 col-md-7">
+                        <div class="advanced-search">
+                            <button type="button" class="category-btn">🍑全部類別</button>
+                            <div class="input-group">
+                                <input type="text" placeholder="搜尋您要的衣服/鞋子/飾品">
+                                <button type="button"><i class="ti-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right col-md-3">
+                        <ul class="nav-right">
+                            <li class="heart-icon">
+                                <a href="">
+                                    <i class="icon_heart_alt"></i>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="cart-icon">
+                                <a href="">
+                                    <i class="icon_bag_alt"></i>
+                                    <span>3</span>
+                                </a>
+                                <div class="cart-hover">
+                                    <div class="select-items">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>$600 x 1</p>
+                                                            <h6>橄欖綠口袋夾克外套</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>$100 x 1</p>
+                                                            <h6>純黃色皺褶毛衣</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="select-total">
+                                        <span>總共:</span>
+                                        <h5>$700</h5>
+                                    </div>
+                                    <div class="select-button">
+                                        <a href="./shopping-cart.html" class="primary-btn view-card">瀏覽購物車</a>
+                                        <a href="./check-out.html" class="primary-btn checkout-btn">立即結帳</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-price">$700</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="container">
+                <div class="nav-depart">
+                    <div class="depart-btn">
+                        <i class="ti-menu"></i>
+                        <span>🍑全部類別</span>
+                        <ul class="depart-hover">
+                            <li class="active"><a href="shop_women.html">WOMEN</a></li>
+                            <li><a href="shop_men.html">MEN</a></li>
+                            <li><a href="shop_kids.html">KIDS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="nav-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">🏠Home</a></li>
+                        <li><a href="./shop.html">🛍️Shop</a></li>
+                        <li><a href="./blog.html">👚穿搭/✈️旅遊/🥘美食達人</a></li>
+                        <li><a href="./contact.html">🗺️實體店面位置</a></li>
+                        <li><a>Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="./shopping-cart.html">🛒查看購物車</a></li>
+                                <li><a href="./check-out.html">直接購買</a></li>
+                                <li><a href="./faq.html">Q&A</a></li>
+                                <li><a href="./register.html">立即註冊</a></li>
+                                <li><a href="./login.html">會員登入</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+        <!-- 目錄路徑 Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <span>穿搭/旅遊/美食達人</span>
+                        <span>&nbsp>&nbsp&nbsp穿搭</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 目錄路徑 Section Begin -->
+<!--左側欄位 Being-->
+    <section class="blog-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+                    <div class="blog-sidebar">
+                        <div class="search-form">
+                            <h4>搜尋</h4>
+                            <form action="#">
+                                <input type="text" placeholder="搜尋文章...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="blog-catagory">
+                            <a href="./blog.html"><h4>回主頁</h4></a>
+                            <ul>
+                                <li><a href="./blog-cloth.html">穿搭(3)</a></li>
+                                <li><a href="">美妝(0)</a></li>
+                                <li><a href="./blog-travel.html">旅遊(1)</a></li>
+                                <li><a href="">模特兒(0)</a></li>
+                            </ul>
+                        </div>
+                        <div class="recent-post">
+                            <h4>最近貼文</h4>
+                            <div class="recent-blog">
+                                <a href="blog-旅遊_堅果小巷.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://pic.pimg.tw/cindy6732/1535368568-574468147.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>堅果小巷
+                                        </h6>
+                                        <p>旅遊 <span>－2021/06/11</span></p>
+                                    </div>
+                                </a>
+
+
+                                <a href="blog-穿搭_打造好看穿搭.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="img/穿搭1.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>打造好看穿搭</h6>
+                                        <p>穿搭 <span>－2021/05/04</span></p>
+                                    </div>
+                                </a>
+                                <a href="blog-穿搭_穿搭技巧一次看完.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://truestyle.tw/wp-content/uploads/2021/02/20201025_210217-edited-1.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>穿搭技巧一次看完</h6>
+                                        <p>穿搭 <span>－2021/05/04</span></p>
+                                    </div>
+                                </a>
+                                <a href="blog-穿搭_服裝顏色搭配.html" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://blog.plain-me.com/wp-content/uploads/2019/06/20190620_color-blog000-01.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>服裝顏色搭配</h6>
+                                        <p>穿搭 <span>－2019/06/04</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog-tags">
+                            <h4></h4>
+                            <div class="tag-item">
+                                <a href="#">台中</a>
+                                <a href="#">打卡聖地</a>
+                                <a href="#">基礎穿搭</a>
+                                <a href="#">早午餐</a>
+                                <a href="#">美食</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--左側欄位 End-->
+            <!--中間blog Being-->
+                <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="blog-details spad">
+                        <div class="row">
+                        <div class="col-lg-12">
+                    <div class="blog-details-inner">
+                        <div class="blog-detail-title">
+                            <h2>如何打造好看穿搭比例</h2>
+                            <p>穿搭 <span>－2021/05/04</span></p>
+                        </div>
+                        <div class="blog-large-pic">
+                            <img src="img/穿搭1.jpg" alt="打造好看穿搭比例">
+                        </div>
+                        <div class="blog-detail-desc">
+                            <p>穿搭就像是門藝術，就有如繪畫一般，需要細心排比 色彩 ( 顏色搭配 ) 以及 題材  ( 服裝單品 )，除此之外想要完成曠世巨作的要素絕不可缺少「輪廓 ( 穿搭比例 )」。<br>
+
+                            穿搭【 比例 】一直以來都是穿衣裡要素，但因為每個人的身材不同，又加上喜好不同，常常讓人苦惱不已，本篇文章就陪你聊聊 穿搭比例 。
+                            </p><br>
+                        </div>
+                        <div class="blog-quote" style="height: 50px">
+                            <p>現今主流 – 黃金比例 1：1.618，穿搭比例也追尋著黃金比例。
+現在的時裝發源都以歐美為主，他們的上下身比例就較多為 3:7，較為接近黃金比例的配比，而亞洲國家的人就以 4;6 和 5:5 為居多，這時候就要靠一些穿搭技巧來塑造趨近黃金比例身型。</p>
+                        </div><br>
+                        <div class="blog-more">
+                            <div class="row">
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-04-600x900.jpg" >
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-05-600x900.jpg" >
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-06-600x900.jpg" >
+                                </div>
+                            </div>
+                        </div>
+                        <h2 style="color: skyblue;" class="my-3">增加腳長：</h2>
+                        <p>我們都知道腿長起來，就能有相對修長的身材比例，但要怎麼增長呢？以下兩點記錄起來：</p><br>
+                        <h3 style="color:#FF8040" class="my-3">褲長決定腿長：</h3>
+                        <p>切記長褲的褲長盡量到腳踝就好，太長或太短都會稍微拉垮下半身比例，露出腳踝或是褲長到腳踝時，人的大腦會自動讓人覺得你的腳長就到那裡，有延伸腿部長度的效果。最難穿著好比例的就是 7分褲，除非要選擇寬鬆並且硬挺的材質，能比較能夠駕馭。</p><br>
+                        <h4 style="color:#FF8040" class="my-3">大腿及小腿比例 1:1 最好：</h4>
+                        <p>讓大腿及小腿比例 1:1，不只能夠讓下半身看起來修長，還能讓腿部線條更好看。<br>短褲建議您約為及膝的寬鬆短褲或是高於膝蓋10 公分內的長度，將大腿小腿比例維持在 1:1 或是小腿比例更長的狀態，較能顯現腿部修長感。</p><br>
+                        <div class="blog-more">
+                            <div class="row">
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/%E6%9C%AA%E6%A0%87%E9%A2%98-120190719_basis-blog000-07.jpg" >
+                                     <p>長褲以9分長度最為修長，配合中高腰設計，更加修飾腿部比例。</p><br>
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-08.jpg" >
+                                    <p>及膝的寬版短褲，能讓修長的小腿露出來，大腿小腿比例控制在 1:1 ，更加修長。</p><br>
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-09.jpg" >
+                                    <p>高於膝蓋10公分內的短褲，更能將整體小腿拉高，造成修長比例。</p><br>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 style="color:#FF8040" class="my-3">製造高腰線：</h3>
+                        <p>把上半身變短下半身自然就長了，這道理不難，看看以下兩點吧！</p><br>
+                        <h4 style="color:#FF8040" class="my-3">上衣紮進褲子裡：</h4>
+                        <p>上短下常可說是最直接打造好比例的方式，學習上衣紮進褲子或是向內折，也能綁腰帶製造假腰線，讓視覺效果有種你的腿比上半身還長的感覺。</p><br>
+                        <h4 style="color:#FF8040" class="my-3">上半身選擇較短版：</h4>
+                        <p>選擇短版，從 T-shirt、襯衫、外套…等等，這樣子不會破壞上下身比例，還能打造多層次搭配方式。
+                        方式就如紮進褲子的道理一樣，製造假高腰線就能展現好比例。</p>
+                        <div class="blog-more">
+                            <div class="row">
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-12.jpg" >
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-08.jpg" >
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <img src="https://blog.plain-me.com/wp-content/uploads/2019/09/20190719_basis-blog000-13.jpg" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tag-share">
+                            <div class="details-tag">
+                                <ul>
+                                    <li><i class="fa fa-tags"></i></li>
+                                    <li>穿搭</li>
+                                    <li>褲子</li>
+                                    <li>腳長</li>
+                                </ul>
+                            </div>
+                            <div class="blog-share">
+                                <span>Share:</span>
+                                <div class="social-links">
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-instagram"></i></a>
+                                    <a href=""><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-post">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <a href="./blog-旅遊_堅果小巷.html" class="prev-blog">
+                                        <div class="pb-pic">
+                                            <i class="ti-arrow-left"></i>
+                                            <img src="https://pic.pimg.tw/cindy6732/1535368568-574468147.jpg" alt="">
+                                        </div>
+                                        <div class="pb-text">
+                                            <span>上一篇文章</span>
+                                            <h5>堅果小巷</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 offset-lg-2 col-md-6">
+                                    <a href="#" class="next-blog">
+                                        <div class="nb-pic">
+                                            <img src="https://truestyle.tw/wp-content/uploads/2021/02/20201025_210217-edited-1.jpg" alt="">
+                                            <i class="ti-arrow-right"></i>
+                                        </div>
+                                        <div class="nb-text">
+                                            <span>下一篇文章</span>
+                                            <h5>穿搭技巧一次看完<h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--中間blog End-->
+
+        <!-- Icon Being -->
+        <section class="latest-blog spad">
+            <div class="container">
+            <div class="benefit-items">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-1.png" alt="免運">
+                            </div>
+                            <div class="sb-text">
+                                <h6>免運費</h6>
+                                <p>全館滿99$皆免運</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-2.png" alt="急速出貨">
+                            </div>
+                            <div class="sb-text">
+                                <h6>急速出貨</h6>
+                                <p>不耽擱您的一分一毫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/icon-1.png" alt="安全支付">
+                            </div>
+                            <div class="sb-text">
+                                <h6>安全支付</h6>
+                                <p>100% 安全支付</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Icon End -->
+
+    <!-- Logo Section Begin -->
+    <div class="partner-logo">
+        <div class="container">
+            <div class="logo-carousel owl-carousel">
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-1.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-2.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-3.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-4.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-item">
+                    <div class="tablecell-inner">
+                        <img src="img/logo-carousel/logo-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Logo Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <a href="./index.html"><img src="img/Footer-logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>地址：台中科技大學｜<br>台中市北區三民路三段129號</li>
+                            <li>電話：+886912345678</li>
+                            <li>Email: andy5517415@gmail.com</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/andy5517416"><i class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/avamax_7?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>相關資訊</h5>
+                        <ul>
+                            <li><a href="./contact.html">關於我們</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h5>個人帳戶</h5>
+                        <ul>
+                            <li><a href="./login.html">我的個人資訊</a></li>
+                            <li><a href="./shopping-cart.html">購物車</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h5>😍訂閱我們的電子報😍</h5>
+                        <p>請輸入電子郵件以獲得我們最新的優惠活動!</p>
+                        <form action="" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your Mail">
+                            <button type="button">🐣訂閱</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+&copy;<script>document.write(new Date().getFullYear());</script> | 資應3A | 1310934017 | 李文勝</i>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                        <div class="payment-pic">
+                            <img src="img/payment-method.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
