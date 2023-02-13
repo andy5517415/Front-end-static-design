@@ -1,7 +1,7 @@
 # Front-end-static-design
 #前端設計 －服飾購物網站
-#HTML/CSS、Bootstrap、jQuery 、JavaScript
-#大學前端設計期末個人報告
+HTML/CSS、Bootstrap、jQuery 、JavaScript
+大學前端設計期末個人報告
 
 1. 主題是服飾購物網站，有套用RWD框架。
 2. 會員註冊/登入功能/喜愛商品清單、購物車功能。
